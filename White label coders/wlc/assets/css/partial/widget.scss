@@ -1,0 +1,116 @@
+.member-sidebar {
+  .member-section {
+    border-top: 2px solid $primary_highlight;
+    margin-bottom: 50px;
+    padding-top: 85px;
+
+    h2 {
+      color: $dark;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .members-content {
+      max-width: 730px;
+      position: relative;
+
+      h3 {
+        color: $primary_highlight;
+        font-size: 38px;
+      }
+
+      p {
+        &.__emphasis {
+          font-weight: bold;
+          margin-bottom: 50px;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        opacity: 1;
+        background: linear-gradient(#f000, $medium);
+      }
+    }
+
+    .cta {
+      background-image: url("./assets/img/house.png");
+      background-position: center;
+      background-size: cover;
+      border-radius: 15px;
+      padding: 65px 30px 40px;
+      position: relative;
+      text-align: center;
+      /* Parralax */
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+      &:after {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        opacity: 0.8;
+        background-color: $primary_highlight;
+        border-radius: 15px;
+      }
+
+      h3,
+      h5,
+      p {
+        color: $light;
+        position: relative;
+        z-index: 3;
+      }
+
+      h3 {
+        font-size: 38px;
+        font-weight: 800;
+      }
+
+      a {
+        position: relative;
+        z-index: 3;
+
+        &.btn-round {
+          background-color: $light;
+          border-radius: 50px;
+          font-size: 25px;
+          font-weight: 600;
+          margin-bottom: 50px;
+          margin-top: 50px;
+          padding: 20px 80px;
+          display: block;
+          width: max-content;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .inline {
+        a,
+        p {
+          display: inline-block;
+          font-size: 20px;
+        }
+
+        a {
+          color: $light;
+          position: relative;
+          z-index: 3;
+          font-weight: bold;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
